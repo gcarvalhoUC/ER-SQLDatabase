@@ -22,7 +22,7 @@ CREATE TABLE suppliers (
 );
 
 CREATE TABLE partsupp (
-	availqty		 int,
+	availqty	int,
 	supplycost	 double precision,
 	comment		 varchar(199),
 	suppliers_suppkey bigint,
@@ -55,7 +55,7 @@ CREATE TABLE orders (
 );
 
 CREATE TABLE lineitems (
-	linenumber		 int,
+	linenumber	int,
 	quantity			 double precision,
 	extendedprice		 double precision,
 	discount			 double precision,
