@@ -10,3 +10,13 @@ CREATE TABLE parts (
 	comment	 varchar(23),
 	PRIMARY KEY(partkey)
 );
+
+CREATE TABLE suppliers (
+	suppkey bigint AUTO_INCREMENT,
+	name	 text,
+	address	varchar(40),
+	phone	 text,
+	accbal	 double precision,
+	comment varchar(101),
+	PRIMARY KEY(suppkey)
+);
