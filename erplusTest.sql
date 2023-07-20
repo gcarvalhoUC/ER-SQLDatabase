@@ -1,4 +1,4 @@
-CREATE TABLE parts (
+CREATE TABLE IF NOT EXISTS parts (
 	partkey	 bigint AUTO_INCREMENT,
 	name	 varchar(55),
 	mfgr	 text,
@@ -11,7 +11,7 @@ CREATE TABLE parts (
 	PRIMARY KEY(partkey)
 );
 
-CREATE TABLE suppliers (
+CREATE TABLE IF NOT EXISTS suppliers (
 	suppkey bigint AUTO_INCREMENT,
 	name	 text,
 	address	varchar(40),
