@@ -1,5 +1,5 @@
 CREATE TABLE parts (
-	partkey	 AUTO_INCREMENT,
+	partkey	 bigint AUTO_INCREMENT,
 	name	 varchar(55),
 	mfgr	 text,
 	brand	 text,
@@ -12,7 +12,7 @@ CREATE TABLE parts (
 );
 
 CREATE TABLE suppliers (
-	suppkey AUTO_INCREMENT,
+	suppkey bigint AUTO_INCREMENT,
 	name	 text,
 	address varchar(40),
 	phone	 text,
@@ -31,7 +31,7 @@ CREATE TABLE partsupp (
 );
 
 CREATE TABLE customers (
-	custkey	 AUTO_INCREMENT,
+	custkey	 bigint AUTO_INCREMENT,
 	name	 varchar(25),
 	address	 varchar(40),
 	phone	 text,
@@ -42,7 +42,7 @@ CREATE TABLE customers (
 );
 
 CREATE TABLE orders (
-	orderkey		 AUTO_INCREMENT,
+	orderkey bigint AUTO_INCREMENT,
 	orderstatus	 text,
 	totalprice	 double precision,
 	orderdate	 date,
