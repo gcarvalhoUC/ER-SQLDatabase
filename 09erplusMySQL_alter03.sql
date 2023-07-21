@@ -1,1 +1,1 @@
-ALTER TABLE orders ADD CONSTRAINT orders_fk1 FOREIGN KEY (customers_custkey) REFERENCES customers(custkey);
+ALTER TABLE orders ADD CONSTRAINT IF NOT EXISTS orders_fk1 FOREIGN KEY (customers_custkey) REFERENCES customers(custkey);

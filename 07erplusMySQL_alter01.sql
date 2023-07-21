@@ -1,1 +1,1 @@
-ALTER TABLE partsupp ADD CONSTRAINT partsupp_fk1 FOREIGN KEY (suppliers_suppkey) REFERENCES suppliers(suppkey);
+ALTER TABLE partsupp ADD CONSTRAINT IF NOT EXISTS partsupp_fk1 FOREIGN KEY (suppliers_suppkey) REFERENCES suppliers(suppkey);
