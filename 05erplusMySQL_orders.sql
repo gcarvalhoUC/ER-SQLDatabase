@@ -1,4 +1,4 @@
-CREATE TABLE orders (
+CREATE TABLE IF NOT EXISTS orders (
 	orderkey bigint NOT NULL AUTO_INCREMENT,
 	orderstatus	 varchar(150),
 	totalprice	 double,

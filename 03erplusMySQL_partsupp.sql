@@ -1,4 +1,4 @@
-CREATE TABLE partsupp (
+CREATE TABLE IF NOT EXISTS partsupp (
 	availqty		 int,
 	supplycost	 double,
 	comment		 varchar(199),

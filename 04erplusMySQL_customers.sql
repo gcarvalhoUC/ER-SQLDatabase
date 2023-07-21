@@ -1,4 +1,4 @@
-CREATE TABLE customers (
+CREATE TABLE IF NOT EXISTS customers (
 	custkey	 bigint NOT NULL AUTO_INCREMENT,
 	name	 varchar(25),
 	address	 varchar(40),

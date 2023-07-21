@@ -1,4 +1,4 @@
-CREATE TABLE parts (
+CREATE TABLE IF NOT EXISTS parts (
 	partkey	 bigint NOT NULL AUTO_INCREMENT,
 	name	 varchar(55),
 	mfgr	 varchar(150),

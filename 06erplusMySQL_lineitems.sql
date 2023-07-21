@@ -1,4 +1,4 @@
-CREATE TABLE lineitems (
+CREATE TABLE IF NOT EXISTS lineitems (
 	linenumber		 int,
 	quantity double,
 	extendedprice		 double,

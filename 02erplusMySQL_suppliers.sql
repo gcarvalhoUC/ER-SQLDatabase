@@ -1,4 +1,4 @@
-CREATE TABLE suppliers (
+CREATE TABLE IF NOT EXISTS suppliers (
   suppkey bigint NOT NULL AUTO_INCREMENT,
   name varchar(150) ,
   address varchar(40),
