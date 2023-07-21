@@ -1,1 +1,1 @@
-ALTER TABLE lineitems ADD CONSTRAINT IF NOT EXISTS lineitems_fk1 FOREIGN KEY (orders_orderkey) REFERENCES orders(orderkey);
+ALTER TABLE lineitems ADD CONSTRAINT lineitems_fk1 FOREIGN KEY IF NOT EXISTS (orders_orderkey) REFERENCES orders(orderkey);
